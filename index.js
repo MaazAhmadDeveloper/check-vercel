@@ -25,6 +25,9 @@ const app = express();
 app.get("/",(req,res)=>{
     res.send("hello world")
 })
+app.get("/slow",(req,res)=>{
+    res.send("gaddi slow world")
+})
 
 //middlewares
 app.use(cors());
